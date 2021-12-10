@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Geometry AR</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- https://ar-js-org.github.io/AR.js-Docs/-->
+<!--Note to self: In order for this code  to work, the following things are required for the gltf-model:
+The entire folder with scene.bin and scene.gltf must be uploaded to GitHub
+The URL must include https
+The URL must start with https://arjs-cors-proxy.herokuapp.com/
+Check that gltf is working at https://gltf-viewer.donmccurdy.com/
+-->
+
+<script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs>
+      <!--Pattern Marker Example Use this Marker Generator https://jeromeetienne.github.io/AR.js/three.js/examples/marker-training/examples/generator.html-->
+
+      <!--First Marker and Model-->
+<a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-16.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/halfcylinder/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Second Marker-->
+ <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-15.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/cone/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Third Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-14.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/pyramid/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      
+      <!--Fourth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-13.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/halfsphere/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Fifth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-12.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/triangularprism/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Sixth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-11.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/cube/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Seventh Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-10.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/cylinder/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      <!--Eighth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-9.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/sphere/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Ninth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-8.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/triangularprism/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      <!--Tenth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-7.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/halfcylinder/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Eleventh Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-6.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/cone/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Twelfth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-5.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/pyramid/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Thirteenth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-4.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/sphere/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Fourteenth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-3.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/halfsphere/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Fifteenth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-2.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/cube/scene.gltf"
+        ></a-entity>
+      </a-marker>
+      
+      <!--Sixteenth Marker-->
+      <a-marker type='pattern' url='https://matthewtbuck.github.io/ARjs/pattern-1.patt'>
+        <a-entity
+          rotation="0 0 0"
+          position="0 0 0"
+          scale=".05 .05 .05"
+          gltf-model="https://arjs-cors-proxy.herokuapp.com/https://matthewtbuck.github.io/ARjs/cylinder/scene.gltf"
+        ></a-entity>
+      </a-marker>
+
+     
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+<!-- partial -->
+  
+</body>
+</html>
